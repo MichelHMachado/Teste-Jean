@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+a:hover{
+    opacity: 0.4;
+}
+
+header {
+    padding: 10px;        
+    margin: auto;
+    background-image: url(../images/imagem2.png);
+    background-size: cover;
+    max-width: 1280px;
+}
+
+.nav-link {
+    margin-right: 0;
+    text-align: center;
+    width: 90px;
+    font-size: 1.2em;
+}
+
+.nav-item .contacts {
+    color: white;
+    font-weight: 100;
+    font-size: large;    
+}
+
+.nav-item .careers {
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+}
+
+
+.nav-item .platform {
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+
+.top-box {
+    display: flex;
+    margin: auto;
+    width: 100%;    
+}
+
+.ml-auto {
+    margin-left:auto;
+}
+
+.header-box{
+    width: 640px;
+    position: relative;
+    bottom: 0;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+.header-box h2{
+    
+    margin-top: 440.825px;
+}
+
+.form-control {
+    font-size: 1.5em;
+    width:230px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+.btn {
+    margin-bottom: 30px;     
+}
+
+.center-box-text {
+    padding-left: 20px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 640px;
+}
+
+.center-box-text p{
+    padding-top: 30px;
+    font-size: larger;
+}
+
+.center-box-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 640px;
+    overflow-x: hidden;
+}
+
+.center-box-img img{
+    max-width: 600px;
+    max-height: 600px;    
+}
+
+.center-box {    
+    padding: 10px;    
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    max-width: 1280px;
+}
+
+.bottom-box {
+    text-align: left;
+    background-image: url(../images/imagem1.png);
+    background-size: cover;
+    max-width: 1280px;
+    min-height: 640px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.bottom-box p{
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+.bottom-box h1{
+    font-size: 2.7em;
+    font-weight: bold;
+}
+
+
+
+
+
+

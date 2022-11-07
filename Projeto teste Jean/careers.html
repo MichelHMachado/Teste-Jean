@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai&family=Bebas+Neue&family=Lobster&family=Overpass&display=swap"
+        rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/careers.css">
+    <link rel="icon" href="images/logo1.png">
+    <script src="https://kit.fontawesome.com/c12611b0fd.js" crossorigin="anonymous"></script>
+    <title>ARKHAM</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <section class="container-fluid top-box">
+                <a href="index.html" class="navbar-brand">
+                    <img class="logo" src="images/logo1.png" width="63" height="63" alt="">
+                    <img class="logo" src="images/logo2.png" height="29" width="134" alt="">
+                </a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navegacao">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link contacts" href="#">CONTACTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link careers" href="careers.html">CAREERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  platform" href="#">PLATFORM</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    <main class="center-box">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 center-box-text">
+                    <p>
+                        We are a tight-knit team with ambitious plans. We have a strong
+                        company culture centered on righteousness and judicious
+                        decision-making. We give team members the autonomy to make
+                        decisions on the basis of the special knowledge they’ve developed.
+                        We’ve created an environment where competent people get things done
+                        in novel situations with minimal bureaucracy.
+                    </p>
+
+                    <button class="btn btn-light">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </button>
+                </div>
+
+                <div class="col-md-6 center-box-list">
+                    <ul>
+                        <li class="list-item">
+                            <span>Head of Marketing
+                                <i id="plus1" class="fa-solid fa-plus"></i>
+                            </span>
+                            <div class="hide" id="plus1B">
+                                <p>
+                                    Charged with defining and driving our overall social media strategy in line
+                                    with
+                                    our
+                                    broader marketing strategy and company culture.
+                                    <i id="minus1" class="fa-solid fa-minus"></i>
+                                </p>
+                                <button class="btn btn-light mt-2">SEE MORE</button>
+                            </div>
+
+                        </li>
+                        <li class="list-item">
+                            <span>Brand & Social Media Manager
+                                <i id="plus2" class="fa-solid fa-plus"></i>
+                            </span>
+                            <div class="hide" id="plus2B">
+                                <p>
+                                    Charged with defining and driving our overall social media strategy in line
+                                    with
+                                    our
+                                    broader marketing strategy and company culture.
+                                </p>
+                                <button class="btn btn-light mt-2">SEE MORE</button>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <span>Head of Marketing
+                                <i id="plus3" class="fa-solid fa-plus"></i>
+                            </span>
+                            <div class="hide" id="plus3B">
+                                <p>
+                                    Charged with defining and driving our overall social media strategy in line
+                                    with
+                                    our
+                                    broader marketing strategy and company culture.
+                                </p>
+                                <button class="btn btn-light mt-2">SEE MORE</button>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <span>Software Engineer
+                                <i id="plus4" class="fa-solid fa-plus"></i>
+                            </span>
+                            <div class="hide" id="plus4B">
+                                <p>
+                                    Charged with defining and driving our overall social media strategy in line
+                                    with
+                                    our
+                                    broader marketing strategy and company culture.
+                                </p>
+                                <button class="btn btn-light mt-2">SEE MORE</button>
+                            </div>
+                        </li>
+                        <li class="list-item last">
+                            <span>Sales Associate
+                                <i id="plus5" class="fa-solid fa-plus"></i>
+                            </span>
+                            <div class="hide" id="plus5B">
+                                <p>
+                                    Charged with defining and driving our overall social media strategy in line
+                                    with
+                                    our
+                                    broader marketing strategy and company culture.
+                                </p>
+                                <button class="btn btn-light mt-2">SEE MORE</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script>
+
+        document.querySelectorAll(".fa-plus").forEach(function (i) {
+
+            i.addEventListener("click", function (event) {
+                const el = event.target || event.srcElement;
+                const id = el.id;
+                console.log(id);
+                const pieceId1 = id.slice(5)
+                const idIcon1 = (`minus${pieceId1}`)
+                console.log(`O id do menos ${idIcon1}`)
+                const newIdIcon1 = document.getElementById(idIcon1)
+                console.log(`icone do minus é ${newIdIcon1}`)
+                               
+                const meuId = document.getElementById(id)
+                meuId.style.display = "none"                
+                const meuId2 = document.getElementById(`${id}B`)
+                console.log(`${id}B`)
+                console.log(meuId2)
+                meuId2.classList.remove("hide")
+
+            });
+
+        });
+
+        document.querySelectorAll(".fa-minus").forEach(function (i) {
+
+            i.addEventListener("click", function (event) {
+                const el = event.target || event.srcElement;
+                const id = el.id;
+                console.log(id);
+                const pieceId = id.slice(5)
+                console.log(pieceId)
+                const putId = (`plus${pieceId}B`)
+                const idIcon = (`plus${pieceId}`)
+                console.log(`id do icone${idIcon}`)              
+                console.log(`oi ${putId} `)
+                const newIdIcon = document.getElementById(idIcon)
+                console.log(newIdIcon)
+                newIdIcon.style.display = "block"
+                const newId = document.getElementById(putId)
+                console.log(newId)
+                newId.classList.add("hide")
+                const meuId1 = document.getElementById(id)
+                meuId1.style.display = "none"                
+                const meuId2 = document.getElementById(`${id}B`)
+                console.log(`${id}B`)
+                console.log(meuId2)
+                
+
+            });
+
+        });
+
+        function displayContent() {
+
+            var plus = document.querySelector(mais);
+            var minus = document.querySelector("#brandSocialIconMinus");
+            plus.style.display = "none";
+            minus.style.display = "block";
+            brandSocial.classList.remove("hide");
+
+
+        }
+
+        function hideContent() {
+            var plus = document.querySelector("#brandSocialIconPlus");
+            var minus = document.querySelector("#brandSocialIconMinus");
+            plus.style.display = "block";
+            minus.style.display = "none";
+            brandSocial.classList.add("hide");
+        }
+
+        function mudarClasse() {
+            const meuId = document.getElementById("plus2")
+            meuId.classList.remove("fa-plus")
+            meuId.classList.add("fa-minus")
+        }
+
+
+
+
+    </script>
+
+    <script>
+
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

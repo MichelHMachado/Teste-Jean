@@ -5,20 +5,60 @@
     text-decoration: none;
 }
 
+@font-face {
+    font-family: 'Helvetica Monospaced Bold';
+    src: url('https://assets.website-files.com/62879326fd745f7489b43224/6287d3ea581281941e3ae60b_cd5dab88d94d254bc8329a885e36f5cd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Helvetica Monospaced';
+    src: url('https://assets.website-files.com/62879326fd745f7489b43224/6287d2ef4cb0e3250b7ff019_395410b1fd4cca8cfb17bd78a9c34889.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Condensed';
+    src: url('https://assets.website-files.com/62879326fd745f7489b43224/6297adbd9b0142a630ec849b_ArkhamHeavyCondensed.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+html {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     color: white;
-    font-family: 'Almarai', sans-serif;
+    font-family: 'Helvetica Monospaced', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 157%;
 }
 
 header {
-    padding: 50px 20px 20px 20px;
+    padding: 12px 0px 12px 0px;
     margin: auto;
-    max-width: 1280px;
+    width: 100%;
 }
 
 a:hover{
     opacity: 0.4;
+}
+
+.navbar-nav {
+    font-family: 'Helvetica Monospaced', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: none;
 }
 
 .navbar-toggler{
@@ -35,8 +75,7 @@ a:hover{
 
 .nav-item .contacts {
     color: white;
-    font-weight: 100;
-    font-size: large;
+    
 }
 
 .nav-item .careers {
@@ -46,9 +85,14 @@ a:hover{
 }
 
 .nav-item .platform {
+    background: -webkit-linear-gradient(45deg, transparent 6px, #FFF 6px), -webkit-linear-gradient(135deg, transparent 6px, #FFF 6px), -webkit-linear-gradient(225deg, transparent 6px, #FFF 6px), -webkit-linear-gradient(315deg, transparent 6px, #FFF 6px);
+    background-position: bottom left, bottom right, top right, top left;
     background-color: white;
-    border-radius: 8px;
+    background-repeat: no-repeat;
+    position: relative;
     color: black;
+    
+
 }
 
 .top-box {
@@ -62,9 +106,13 @@ a:hover{
 }
 
 .center-box {
+    text-transform: uppercase;
+    font-family: 'Helvetica Monospaced', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 157%;
     padding: 20px;
-    margin: auto;
-    max-width: 1280px;
+    margin: auto;    
     width: 100%;
     display: flex;
     justify-content: center;

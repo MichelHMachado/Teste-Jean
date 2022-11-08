@@ -99,6 +99,8 @@ header {
 }
 
 .ml-auto {
+    position: fixed;
+    right: 5%;
     margin-left: auto;
 }
 

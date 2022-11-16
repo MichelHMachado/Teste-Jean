@@ -27,8 +27,8 @@
         <nav class="navbar navbar-expand-md navbar-light">
             <section class="container-fluid top-box">
                 <a href="index.html" class="navbar-brand">
-                    <img class="logo" src="images/logo1.png" width="53" height="53" alt="">
-                    <img class="logo" src="images/logo2.png" height="24" width="124" alt="">
+                    <img class="logo" src="images/logo1.png" width="63" height="63" alt="">
+                    <img class="logo" src="images/logo2.png" height="29" width="134" alt="">
                 </a>
 
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao">
@@ -82,6 +82,7 @@
                                     with
                                     our
                                     broader marketing strategy and company culture.
+                                    <i id="minus1" class="fa-solid fa-minus"></i>
                                 </p>
                                 <button class="btn btn-light mt-2">SEE MORE</button>
                             </div>
@@ -89,16 +90,17 @@
                         </li>
                         <li class="list-item">
                             <span>Brand & Social Media Manager
-                                <i onclick="displayContent()" id="plus2" class="fa-solid fa-plus"></i> 
-                                <i onclick="hideContent()" id="minus2" class="fa-solid fa-minus"></i>                               
+                                <i id="plus2" class="fa-solid fa-plus"></i>
                             </span>
                             <div class="hide" id="plus2B">
                                 <p>
                                     Charged with defining and driving our overall social media strategy in line
                                     with
                                     our
-                                    broader marketing strategy and company culture.
+                                    broader marketing strategy and company culture. 
+                                    <i id="minus2" class="fa-solid fa-minus"></i>                                   
                                 </p>
+                                
                                 <button class="btn btn-light mt-2">SEE MORE</button>
                             </div>
                         </li>
@@ -112,6 +114,7 @@
                                     with
                                     our
                                     broader marketing strategy and company culture.
+                                    <i id="minus3" class="fa-solid fa-minus"></i>                             
                                 </p>
                                 <button class="btn btn-light mt-2">SEE MORE</button>
                             </div>
@@ -126,6 +129,7 @@
                                     with
                                     our
                                     broader marketing strategy and company culture.
+                                    <i id="minus4" class="fa-solid fa-minus"></i>
                                 </p>
                                 <button class="btn btn-light mt-2">SEE MORE</button>
                             </div>
@@ -140,6 +144,7 @@
                                     with
                                     our
                                     broader marketing strategy and company culture.
+                                    <i id="minus5" class="fa-solid fa-minus"></i>
                                 </p>
                                 <button class="btn btn-light mt-2">SEE MORE</button>
                             </div>
@@ -152,37 +157,50 @@
 
 
 
-    <script>       
-
-        function displayContent() {
-
-            var plus = document.querySelector("#plus2");
-            var minus = document.querySelector("#minus2");
-            plus.style.display = "none";
-            minus.style.display = "block";
-            plus2B.classList.remove("hide");
-
-
-        }
-
-        function hideContent() {
-            var plus = document.querySelector("#plus2");
-            var minus = document.querySelector("#minus2");
-            plus.style.display = "block";
-            minus.style.display = "none";
-            plus2B.classList.add("hide");
-        }
-
-        
-
-
-
-
-    </script>
-
     <script>
 
-    </script>
+        document.querySelectorAll(".fa-plus").forEach(function (i) {
+
+            i.addEventListener("click", function (event) {
+                const el = event.target || event.srcElement;
+                const id = el.id;                
+                const pieceId = id.slice(4);                
+                const idIcon = (`minus${pieceId}`);                  
+                const newIdIcon = document.getElementById(idIcon)                
+                newIdIcon.style.display = "block";                               
+                const meuId = document.getElementById(id)
+                meuId.style.display = "none"                
+                const meuId2 = document.getElementById(`${id}B`)                
+                meuId2.classList.remove("hide")
+
+            });
+
+        });
+
+        document.querySelectorAll(".fa-minus").forEach(function (i) {
+
+            i.addEventListener("click", function (event) {
+                const el = event.target || event.srcElement;
+                const id = el.id;                
+                const pieceId = id.slice(5);                              
+                const putId = (`plus${pieceId}B`);
+                const idIcon = (`plus${pieceId}`);               
+                const newIdIcon = document.getElementById(idIcon);                
+                newIdIcon.style.display = "block";
+                const newId = document.getElementById(putId);                
+                newId.classList.add("hide");
+                const meuId1 = document.getElementById(id);
+                meuId1.style.display = "none";                
+                const meuId2 = document.getElementById(`${id}B`);
+                
+                
+
+            });
+
+        });
+
+        
+    </script>    
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
